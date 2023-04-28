@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="script.js"></script>
+	<title>Exam</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<p>Shop Right Now!</p>
+	<div class="flexbox" id="box1">
+		<div class="flexitem">
+			<img src="Shoes.jpg" class="image">
+			<p>Nike Men's Lebron Witness 7 EP Basketball Shoes</p>
+			<p><b>Php 4236</b></p>
+			<button onclick="show1()" class="button">Click here to check out!</button>
+		</div>
+	</div>
+	<div class="flexbox" id="box2" style="display:none">
+		<div class="flexitem">
+			<img src="Shoes.jpg" class="image">
+			<p>Nike Men's Lebron Witness 7 EP Basketball Shoes</p>
+			<p><b>Php 4236</span></b></p>
+			<button onclick="subQuan()" class="button">-</button>
+			<span id="quant1" style="font-size:30px">1</span>
+			<button onclick="addQuan()" class="button">+</button>
+		</div>
+		<div>
+			<div class="flexitem">
+				<p><b>Ready to check out?</b></p>
+			</div>
+			<div class="flexitem">
+				<div class="flexitem" style="flex-grow: 19">
+					<p>Subtotal: Php <span id="nprice">4236</span></p>
+					<p>Quantity: <span id="quant2">1</span></p>
+					<p>Shipping: Php <span id="ship">120</span></p>
+				</div>
+				<p><b>TOTAL AMOUNT: Php <span id="total">5326</b></p>
+				<button class="button" onclick="show2()">Checkout</button>
+			</div>
+		</div>
+	</div>
+	<div class="flexbox" id="box4" style="display:none">
+        	<div class="flexitem">
+            	<img src="Shoes.jpg">
+        	</div>
+        	<div class="flexitem">
+        		<div>
+            		<p><b>Nike Men's Lebron Witness 7 EP Basketball Shoes</b></p>
+            		<p></p>
+            		<p>Quantity: <span id="finalquant">1</span></p>
+            		<p>Shipping Fee: Php <span id="finaltotal">90</span></p>
+            		<p>Total: Php <span id="finalship">5326</span></p>
+            	</div>
+            	<div>
+            		<h1>Thank you for shopping!</h1>
+            	</div>
+        	</div>
+    	</div>
+
+</body>
+</html>
